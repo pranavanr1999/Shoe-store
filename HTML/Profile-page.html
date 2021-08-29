@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Checkout</title>
     <link rel="stylesheet" href="../css/checkout.css" />
+    <link rel="stylesheet" href="../style.css">
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/preloader.css" />
-    <link rel="stylesheet" href="../style.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -70,7 +70,7 @@
                 <a href="#">PUMA</a>
                 <a href="#">NEW BALANCE</a>
                 <a href="#">FILA</a>
-                <a href="#">HRX</a>
+              <a href="#">HRX</a>
               </span>
             </div>
           </li>
@@ -80,57 +80,53 @@
         </ul>
       </nav>
     </header>
-    <section>
-      <h1>Payment</h1>
-      <div class="payment-container">
-          <ul>
-              <div class="option">
-                  <input type="radio" name="Cash On Delivery" id="radio">
-                  <h4 style="margin-left: 20px;">Cash On Delivery</h4>
-              </div>
-              <div cla.ss="option">
-                <input type="radio" name="Cash On Delivery" id="radio">
-                <h4 style="margin-left: 20px;">Internet Banking</h4>
-            </div>
-            <div class="option">
-                <input type="radio" name="Cash On Delivery" id="radio">
-                <h4 style="margin-left: 20px;">UPI </h4>
-            </div>
-            <div>
-                <div class="option">
-                    <input type="radio" name="Cash On Delivery" id="radio">
-                    <h4 style="margin-left: 20px;">Card Payment</h4>
-                    
+    <section style=" background-color: rgb(93, 93, 94); height: 80%; width: 100%;">
+        <div class="row" style="justify-content: flex-start;">
+            <div class="col" style=" margin-left: -50px; height: 100%; width: 25%; background-color: rgb(93, 93, 94);">
+               <div class="profile">
+                   <h2>Hello User </h2>
+               </div>
+               <div class="contents">
+                   <div class="my-orders">
+                       <span class="text">MY ORDERS</span>
+                   </div>
+                   <div class="info">
+                    <span class="info-text">Profile Information</span>
                 </div>
-                <div class="cards">
-                    <div>
-                        <div class="single-card">
-                            <h5 onclick="fn1()" style="cursor: pointer;">Add Card</h5>
-                        </div>
-                        <div id="card" class="add-card">
-                            <input type="text" placeholder="Card Number" class="card-no">
-                            <div class="option">
-                                <input type="text" placeholder="Exp" class="exp">
-                                <input type="text" placeholder="CVV" class="cvv">
-                            </div>
-                        </div>
-                    </div>
+                <div class="address">
+                    <span class="address-text">Manage Addresses</span>
                 </div>
+                <div class="card">
+                    <span class="Card-text">Saved Cards</span>
+                </div>
+         </div>
             </div>
-          </ul>
-      </div>
+            <div class="col2">
+                <section class='personal-info'>
+                  <div class="_1cyhik">
+                    <span class="_1mHr1S">Personal Information</span></div>
+                  <div>
+                  
+                  <div >
+                      <h3 style="margin-left: 20px; margin-bottom: -10px;">username</h3>
+                    <input class="username" type='text' value='Username'/>
+                  </div>
+                  </div>
+                <div>
+                    <h3 style="margin-left: 20px; margin-bottom: -10px;">Email Address</h3>
+
+                    <input class="email" type='email' placeholder="email" value='username@gmail.com'/>
+
+                </div>
+                <div>
+                    <h3 style="margin-left: 20px; margin-bottom: -10px;">Phone Number</h3>
+
+                    <input class="phone" type='text' value='+916895154865'/>
+                </div>
+                </section>
+            </div>
+        </div>
+           
     </section>
   </body>
-  <script>
-      function fn1(){
-          var card = document.getElementById("card");
-          if(card.style.visibility == "hidden"){
-              card.style.visibility = "visible";
-          }
-          else{
-            card.style.visibility = "hidden";
-
-          }
-      }
-  </script>
 </html>
